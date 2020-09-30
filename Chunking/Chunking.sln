@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chunking", "Chunking\Chunking.csproj", "{EF25D0C5-64DA-4CBE-8B5F-22CC5FD28ED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChunkingTests", "ChunkingTests.cs\ChunkingTests.csproj", "{17CF0B90-E1E3-401C-A71C-F857136606C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChunkingTests", "ChunkingTests\ChunkingTests.csproj", "{17CF0B90-E1E3-401C-A71C-F857136606C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
