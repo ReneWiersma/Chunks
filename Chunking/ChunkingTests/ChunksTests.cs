@@ -32,7 +32,7 @@ namespace ChunkingTests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void ChunkSizeZeroNotAllowed()
+        public void ChunkSizeZero()
         {
             var items = new List<string>();
 
@@ -41,7 +41,7 @@ namespace ChunkingTests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void ItemsListNullNotAllowed()
+        public void ItemsListNull()
         {
             new Chunks<string>(null, 100);
         }
