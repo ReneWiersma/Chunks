@@ -4,6 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>ReneWiersma.Chunking</RootNamespace>
     <AssemblyName>ReneWiersma.Chunking</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>René Wiersma</Authors>
+    <Company>René Wiersma</Company>
+    <Description>The Chunking library divides an Enumerable into equally sized chunks and allows you to iterate over them. This may be useful when, for example, sending a large of items to a webservice, or saving a large number of items to a database, which may otherwise result in time-outs.</Description>
+    <Copyright>Copyright 2020 - René Wiersma</Copyright>
+    <RepositoryUrl>https://github.com/ReneWiersma/Chunks</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>Chunk, chunks, chunking</PackageTags>
   </PropertyGroup>
 
 </Project>
