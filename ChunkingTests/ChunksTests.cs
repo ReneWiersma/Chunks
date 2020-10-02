@@ -19,7 +19,7 @@ namespace ChunkingTests
         {
             var items = CreateItems(numberOfItems);
 
-            var sut = new Chunks<string>(items, chunkSize);
+            var sut = items.ToChunks(chunkSize);
 
             Assert.AreEqual(expected, sut.Count());
         }
@@ -36,14 +36,14 @@ namespace ChunkingTests
         {
             var items = new List<string>();
 
-            new Chunks<string>(items, 0);
+            items.ToChunks(0);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         public void ItemsListNull()
         {
-            new Chunks<string>(null, 100);
+            (null as List<bool>).ToChunks(100);
         }
 
         [TestMethod]
@@ -51,7 +51,7 @@ namespace ChunkingTests
         {
             var items = CreateItems(19);
 
-            var sut = new Chunks<string>(items, chunkSize: 20).ToArray();
+            var sut = items.ToChunks(chunkSize: 20).ToArray();
 
             Assert.AreEqual(19, sut[0].Count());
         }
@@ -61,7 +61,7 @@ namespace ChunkingTests
         {
             var items = CreateItems(21);
 
-            var sut = new Chunks<string>(items, chunkSize: 20).ToArray();
+            var sut = items.ToChunks(chunkSize: 20).ToArray();
 
             Assert.AreEqual(20, sut[0].Count());
             Assert.AreEqual(1, sut[1].Count());
@@ -72,7 +72,7 @@ namespace ChunkingTests
         {
             var items = CreateItems(5);
 
-            var sut = new Chunks<string>(items, chunkSize: 3).ToArray();
+            var sut = items.ToChunks(chunkSize: 3).ToArray();
 
             Assert.AreEqual("0", sut[0].ToArray()[0]);
             Assert.AreEqual("1", sut[0].ToArray()[1]);

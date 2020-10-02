@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ReneWiersma.Chunking
 {
-    public class Chunks<T> : IEnumerable<IEnumerable<T>>
+    internal class Chunks<T> : IEnumerable<IEnumerable<T>>
     {
         readonly IEnumerable<T> items;
         readonly int chunkSize;
