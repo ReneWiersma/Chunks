@@ -8,6 +8,9 @@ Example of use:
 
 var items = new List<string>();
 
-// add large number of items to list
+// add a large number of items to list
 
-var chunks = items.ToChunks(chunkSize: 250);
+foreach (var chunk in items.ToChunks(chunkSize: 250))
+{
+  // Process chunk
+}
