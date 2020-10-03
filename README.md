@@ -11,6 +11,4 @@ var items = new List<string>();
 // add a large number of items to list
 
 foreach (var chunk in items.ToChunks(chunkSize: 250))
-{
-  // Process chunk
-}
+  // process chunk
