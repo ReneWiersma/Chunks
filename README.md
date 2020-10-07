@@ -10,7 +10,7 @@ Available on [nuget](https://www.nuget.org/packages/ReneWiersma.Chunking/)
 
 	PM> Install-Package ReneWiersma.Chunking
 
-## Example of use:
+### Example of use
 
 ```csharp
 var items = new List<string>();
