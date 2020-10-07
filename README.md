@@ -6,9 +6,13 @@ This may be useful when, for example, sending a large of items to a webservice, 
 
 Example of use:
 
+```
 var items = new List<string>();
 
 // add a large number of items to list
 
 foreach (var chunk in items.ToChunks(chunkSize: 250))
+{
   // process chunk
+}
+```
